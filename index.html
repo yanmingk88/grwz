@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>吴险胜的个人网站</title>
+    <link rel="icon" type="image/x-icon" href="/tx.img/wytb.png" />
+    <style>
+      body {
+        background-color: rgb(72, 72, 65);
+        margin: 0; /* 重置默认边距，替代nav的负margin */
+      }
+      nav {
+        /* 找到你现有的导航CSS样式，直接添加这3行即可 */
+        /* 原有样式全部保留，不要删！不要改！ */
+        /* 只新增下面4行，布局100%不变 */
+        position: -webkit-sticky; /*兼容Safari浏览器的sticky*/
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        display: flex; /*使用flex布局*/
+        align-items: center; /*垂直居中对齐*/
+        padding: 20px 15px; /*内边距*/
+        background-color: #494747; /*背景颜色*/
+        height: 50px; /*导航栏高度*/
+      }
+      .logo {
+        display: flex; /*使用flex布局*/
+      }
+      .logo-tp {
+        margin-right: 15px; /*头像与文字之间的间距*/
+        border-radius: 50%;
+      }
+      .logo-text {
+        /* 修复重复类名问题 */
+        font-size: 40px;
+        font-weight: bold;
+        color: #f2f3d7;
+      }
+
+      .dh {
+        display: flex;
+        align-items: center;
+        margin-left: auto; /*将导航链接推到右侧*/ /* 替代固定720px，适配不同屏幕 */
+      }
+      .dh a {
+        display: flex;
+        flex-direction: column;
+        color: #fffdf0;
+        text-decoration: none;
+        font-size: 20px;
+        margin-left: 20px;
+      }
+      main {
+        padding: 50px 100px; /*内边距*/ /* 调整内边距，避免溢出 */
+        background-color: antiquewhite; /*背景颜色*/
+      }
+      main p {
+        font-size: 25px;
+      }
+      .sybt {
+        text-align: center;
+        padding: 50px 20px;
+
+        font-size: 30px;
+      }
+      .sybt-js {
+        /*大改！学了flex一维布局去做网格布局（二维）还做出来了其他装饰这个页就不做了*/
+        /* 修复重复类名问题，改为sybt-js */
+        /* 核心：网格布局 - 两列，列宽等分，间距20px */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 两列，每列宽度相等 */
+        gap: 20px; /* 替代固定height，自适应间距 */ /* 行列之间的间距（替代原有的margin/gap） */
+        margin: 40px 0 20px;
+        padding: 0 10px; /* 左右留白，避免贴边 */
+      }
+      .jsk {
+        background-color: #494747;
+        color: #f4bfbf; /*字体颜色*/
+        margin: 10px; /*外边距*/
+        padding: 20px; /*内边距*/
+        border-radius: 35px; /*边框圆角*/
+        letter-spacing: 2px; /*字母间距*/
+        width: 80%; /*宽度*/ /* 增加宽度，优化显示 */
+      }
+      .anlu {
+        background-color: #292727;
+        border-radius: 35px;
+        padding: 10px 20px;
+        font-size: 20px;
+        color: #fff0f0;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <nav>
+      <div class="logo">
+        <img
+          class="logo-tp"
+          src="dhtx.png"
+          alt="头像logo"
+          height="60px"
+          width="60px"
+        />
+        <!--修复重复类名问题-->
+        <div class="logo-text">WXSD GRWZ</div>
+      </div>
+
+      <div class="dh">
+        <a href="#sy">首页</a>
+        <a href="无">关于</a>
+        <a href="无">服务</a>
+        <a href="无">联系</a>
+        <a href="无">资讯</a>
+      </div>
+    </nav>
+    <!-- 主体内容 -->
+    <main>
+      <!-- 首页内容 -->
+      <section class="sybt" id="sy">
+        <h1>欢迎来到吴险胜的个人网站！</h1>
+        <p>(开始学习时间)2025.8.20---------------2026.4.10(网页诞生时间)</p>
+        <a href="#sy"> <button class="anlu">了解更多</button></a>
+      </section>
+      <section class="sybt-js">
+        <div class="jsk">
+          <div>
+            <img
+              class="logo-tp"
+              src="jstp1.png"
+              alt="头像"
+              width="80"
+              height="80"
+            />
+          </div>
+          <h1>学习编程</h1>
+          <p>
+            这是一个刚学习编程做的第一个网页，尽管不是很标准很漂亮，可这是一个梦开始的地方
+          </p>
+        </div>
+        <div class="jsk">
+          <div>
+            <img
+              class="logo-tp"
+              src="jstp2.png"
+              alt="头像"
+              width="80"
+              height="80"
+            />
+          </div>
+          <h1>学习制作</h1>
+          <p>
+            出了很多bug用AI检查改进的，这一页整体风格与主要的就不改了，以后好看看对比一下第一次做的
+          </p>
+        </div>
+        <div class="jsk">
+          <div>
+            <img
+              class="logo-tp"
+              src="jstp3.png"
+              alt="头像"
+              width="80"
+              height="80"
+            />
+          </div>
+          <h1>学习成长</h1>
+          <p>
+            等后期技术好了也好看看当初，初学的作品与将来我所能做的对比一下感受成长带来的味道
+          </p>
+        </div>
+        <div class="jsk">
+          <div>
+            <img
+              class="logo-tp"
+              src="jstp4.png"
+              alt="头像"
+              width="80"
+              height="80"
+            />
+          </div>
+          <h1>学习鸡汤</h1>
+          <p>
+            勤能补拙，不积跬步无以至千里，不积小流无以成江海，(虽然我觉得我这个作品可能连小流都算不上哈哈)
+          </p>
+        </div>
+        <div class="jsk">
+          <div>
+            <img
+              class="logo-tp"
+              src="jstp5.png"
+              alt="头像"
+              width="80"
+              height="80"
+            />
+          </div>
+          <h1>学习交流</h1>
+          <p>
+            如果能有大佬看见这个作品能给我一些技术知识吗？感谢！也祝每个人都能心想事成，阖家欢乐，身体健康
+          </p>
+        </div>
+        <div class="jsk">
+          <div>
+            <img
+              class="logo-tp"
+              src="jstp6.png"
+              alt="头像"
+              width="80"
+              height="80"
+            />
+          </div>
+          <h1>学习反馈</h1>
+          <p>
+            在做时我用自己目前的理解去做，在用AI检查bug与无用代码以得到纠正反馈改进完善
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
