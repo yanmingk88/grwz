@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>吴险胜的个人网站</title>
+    <link rel="stylesheet" href="/grwz/css/dhl.css" />
+    <link rel="icon" type="image/x-icon" href="/tpmt/jtt/wytbtx.png" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        margin-left: auto; /*将导航链接推到右侧*/ /* 替代固定720px，适配不同屏幕 */
+        margin-right: auto; /*将导航链接推到左侧*/ /* 替代固定720px，适配不同屏幕 */
+      }
+      main {
+        padding: 50px 100px; /*内边距*/ /* 调整内边距，避免溢出 */
+        background-color: antiquewhite; /*背景颜色*/
+      }
+      main p {
+        font-size: 25px;
+      }
+      .sybt {
+        text-align: center;
+        padding: 50px 20px;
+
+        font-size: 30px;
+      }
+      .sybt-js {
+        /*大改！学了flex一维布局去做网格布局（二维）还做出来了其他装饰这个页就不做了*/
+        /* 修复重复类名问题，改为sybt-js */
+        /* 核心：网格布局 - 两列，列宽等分，间距20px */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 两列，每列宽度相等 */
+        gap: 20px; /* 替代固定height，自适应间距 */ /* 行列之间的间距（替代原有的margin/gap） */
+        margin: 40px 0 20px;
+        padding: 0 10px; /* 左右留白，避免贴边 */
+      }
+      .jsk {
+        background-color: #494747;
+        color: #f4bfbf; /*字体颜色*/
+        margin: 10px; /*外边距*/
+        padding: 20px; /*内边距*/
+        border-radius: 35px; /*边框圆角*/
+        letter-spacing: 2px; /*字母间距*/
+        width: 80%; /*宽度*/ /* 增加宽度，优化显示 */
+      }
+      .anlu {
+        background-color: #292727;
+        border-radius: 35px;
+        padding: 10px 20px;
+        font-size: 20px;
+        color: #fff0f0;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <nav>
+      <div class="logo">
+        <img
+          class="logo-tp"
+          src="/tpmt/jtt/wytbtx.png"
+          alt="头像logo"
+          height="60px"
+          width="60px"
+        />
+        <!--修复重复类名问题-->
+        <div class="logo-text">WXSD GRWZ</div>
+      </div>
+
+      <div class="dh">
+        <a href="/index.html">首页</a>
+        <a href="/grwz/html/gy.html">关于</a>
+        <a href="/grwz/html/fwyan.html">服务</a>
+        <a href="/grwz/html/zx.html">资讯</a>
+      </div>
+    </nav>
+    <!-- 主体内容 -->
+    <main>
+      <!-- 首页内容 -->
+      <section class="sybt" id="sy">
+        <h1>服务介绍</h1>
+        <a href="/grwz/html/gy.html#fwlx" target="_blank">
+          <button class="anlu">联系方式</button></a
+        >
+      </section>
+      <section class="sybt-js">
+        <div class="jsk">
+          <div>
+            <img
+              class="logo-tp"
+              src="/tpmt/jtt/fwtp.png"
+              alt="头像"
+              width="80"
+              height="80"
+            />
+          </div>
+          <h1>前端开发</h1>
+          <p>
+            专注于前端技术开发，包括HTML、CSS、JavaScript等，致力于打造美观且用户友好的网页界面。
+          </p>
+        </div>
+        <div class="jsk">
+          <div>
+            <img
+              class="logo-tp"
+              src="/tpmt/jtt/fw2.png"
+              alt="头像"
+              width="80"
+              height="80"
+            />
+          </div>
+          <h1>后端开发</h1>
+          <p>
+            专注于后端技术开发，包括服务器端编程、数据库管理、API开发等，致力于构建高效、稳定的服务器系统。
+          </p>
+        </div>
+        <div class="jsk">
+          <div>
+            <img
+              class="logo-tp"
+              src="/tpmt/jtt/fw3.png"
+              alt="头像"
+              width="80"
+              height="80"
+            />
+          </div>
+          <h1>全栈开发</h1>
+          <p>
+            专注于全栈技术开发，包括前端、后端、数据库、服务器等，致力于打造全方位的开发解决方案。
+          </p>
+        </div>
+        <div class="jsk">
+          <div>
+            <img
+              class="logo-tp"
+              src="/tpmt/jtt/fw4.png"
+              alt="头像"
+              width="80"
+              height="80"
+            />
+          </div>
+          <h1>UI/UX设计</h1>
+          <p>
+            专注于UI/UX设计，包括界面设计、用户体验设计、交互设计等，致力于打造美观、易用的用户界面。
+          </p>
+        </div>
+        <div class="jsk">
+          <div>
+            <img
+              class="logo-tp"
+              src="/tpmt/jtt/fw5.png"
+              alt="头像"
+              width="80"
+              height="80"
+            />
+          </div>
+          <h1>Python开发</h1>
+          <p>
+            专注于Python开发，包括Python编程、数据分析、机器学习等，致力于打造高效、可靠的Python开发解决方案。
+          </p>
+        </div>
+        <div class="jsk">
+          <div>
+            <img
+              class="logo-tp"
+              src="/tpmt/jtt/fw6.png"
+              alt="头像"
+              width="80"
+              height="80"
+            />
+          </div>
+          <h1>Java开发</h1>
+          <p>
+            专注于Java开发，包括Java编程、数据库管理、Web开发等，致力于打造高效、稳定的Java开发解决方案。
+          </p>
+        </div>
+        <div class="jsk">
+          <div>
+            <img
+              class="logo-tp"
+              src="/tpmt/jtt/fw7.png"
+              alt="头像"
+              width="80"
+              height="80"
+            />
+          </div>
+          <h1>AI开发</h1>
+          <p>
+            专注于AI开发，包括机器学习、深度学习等，致力于打造高效、可靠的AI解决方案。
+          </p>
+        </div>
+        <div class="jsk">
+          <div>
+            <img
+              class="logo-tp"
+              src="/tpmt/jtt/fw9.png"
+              alt="头像"
+              width="80"
+              height="80"
+            />
+          </div>
+          <h1>AI视频制作</h1>
+          <p>
+            专注于AI视频制作，包括视频剪辑、特效制作等，致力于打造高效、可靠的AI视频解决方案。
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
